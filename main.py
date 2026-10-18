@@ -22,6 +22,6 @@ RESULT = {
     }
 }
 
-@app.get("/")
-def get_results():
+@app.get("/answer.json")
+def get_answer():
     return JSONResponse(content=RESULT)
